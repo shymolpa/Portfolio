@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shymol P A | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:#0f172a;
+  color:#e5e7eb;
+}
+
+/* HEADER */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 10%;
+  background:#020617;
+}
+
+header h1{ color:#3b82f6; }
+
+nav a{
+  margin-left:20px;
+  text-decoration:none;
+  color:#c7d2fe;
+}
+
+nav a:hover{ color:#60a5fa; }
+
+/* HERO */
+.hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:80px 10%;
+  flex-wrap:wrap;
+}
+
+.hero-img img{
+  width:400px;
+  height:500px;
+  object-fit:cover;
+  border-radius:50% / 60%;
+  border:5px solid #3b82f6;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 28px;
+  background:#2563eb;
+  color:#fff;
+  text-decoration:none;
+  border-radius:25px;
+}
+
+/* SECTIONS */
+section{ padding:70px 10%; }
+
+section h2{
+  text-align:center;
+  margin-bottom:40px;
+  color:#93c5fd;
+}
+
+/* ABOUT */
+.about{
+  display:flex;
+  justify-content:center;
+}
+
+.about p{
+  text-align:center;
+}
+/* EXPERIENCE */
+.experience{
+  max-width:800px;
+  margin:auto;
+}
+
+.experience-card{
+  background:#020617;
+  padding:30px;
+  border-radius:16px;
+  box-shadow:0 8px 25px rgba(37,99,235,0.25);
+}
+
+.experience-card h3{
+  color:#93c5fd;
+  margin-bottom:5px;
+}
+
+.experience-card span{
+  color:#c7d2fe;
+  font-size:14px;
+}
+
+.duration{
+  color:#60a5fa;
+  font-size:14px;
+  margin:8px 0 15px;
+}
+
+.experience-card p{
+  line-height:1.7;
+  color:#e5e7eb;
+}
+
+
+/* PROJECTS */
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+}
+
+.project-box{
+  background:#020617;
+  padding:20px;
+  border-radius:16px;
+  box-shadow:0 8px 25px rgba(37,99,235,0.25);
+}
+
+.project-box img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+
+.project-box img:hover{
+  transform:scale(1.05);
+}
+
+
+.project-box h4{
+  margin-top:15px;
+  color:#93c5fd;
+}
+
+/* PRESENTATIONS */
+.presentations{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
+  max-width:900px;
+  margin:auto;
+}
+
+.presentation-card{
+  background:#020617;
+  padding:25px;
+  border-radius:16px;
+  transition:0.3s;
+}
+
+.presentation-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 16px 40px rgba(37,99,235,0.6);
+}
+
+.presentation-card h4{ color:#93c5fd; }
+
+.presentation-card a{
+  display:inline-block;
+  margin-top:15px;
+  padding:10px 22px;
+  background:#2563eb;
+  color:#fff;
+  border-radius:25px;
+  text-decoration:none;
+}
+
+/* SKILLS */
+.skills-section{
+  max-width:600px;
+  margin:auto;
+}
+
+.skill{ margin-bottom:25px; }
+
+.skill-header{
+  display:flex;
+  justify-content:space-between;
+}
+
+.progress-bar{
+  height:14px;
+  background:#1e293b;
+  border-radius:20px;
+}
+
+.progress{
+  height:100%;
+  background:#3b82f6;
+  border-radius:20px;
+}
+
+/* CONTACT */
+.contact-card{
+  background:#020617;
+  padding:30px;
+  border-radius:16px;
+  box-shadow:0 8px 25px rgba(37,99,235,0.25);
+}
+.social-links a{
+  margin: 5px;
+  display: inline-block;
+}
+
+.linkedin-btn{
+  background:#0a66c2;
+}
+
+
+/* FOOTER */
+footer{
+  background:#020617;
+  text-align:center;
+  padding:20px;
+  color:#94a3b8;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .hero,.about{
+    flex-direction:column;
+    text-align:center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Portfolio</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#presentations">Presentations</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <h2>Hello, I'm<br>Shymol P A</h2>
+    <p>IT Professional | ASP.NET Developer | Data Analytics Enthusiast</p>
+    <a href="Shymol_PA_Modern_Resume.pdf" class="btn" download>Download CV</a>
+  </div>
+  <div class="hero-img">
+    <img src="casualnwpic.png" alt="Profile">
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+ <div class="about">
+  <p>
+    I am a dedicated IT professional with a Bachelor’s degree in Electronics and
+    Communication Engineering and hands-on experience as an ASP.NET Developer.
+    <br><br>
+    Currently, I am expanding my expertise in Data Analytics using Advanced Excel,
+    Power BI, SQL, and Python basics, creating dashboards and reports for
+    data-driven decision-making.
+  </p>
+</div>
+
+</section>
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="experience">
+    <div class="experience-card">
+      <h3>ASP.NET Programmer</h3>
+      <span>Lifisin Technologies, Aluva</span>
+      <p class="duration">2011 – 2013</p>
+      <p>
+        Worked as an ASP.NET Programmer involved in developing and maintaining
+        web-based applications. Gained hands-on experience in ASP.NET, C#,
+        database handling, debugging, and application support while working
+        in a professional software development environment.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="project-box">
+  <a href="PowerbiDashboard.png" target="_blank">
+    <img src="PowerbiDashboard.png" alt="Power BI Dashboard">
+  </a>
+  <h4>Power BI Sales Dashboard</h4>
+  <p>Sales, profit and city-wise insights.</p>
+</div>
+
+  <div class="project-box">
+    <a href="USAAnnualPurchase.png" target="_blank">
+      <img src="USAAnnualPurchase.png" alt="USA Purchase Analysis">
+    </a>
+    <h4>USA Purchase Analysis</h4>
+    <p>Excel based salary & purchase analysis.</p>
+   </div>
+  <div class="project-box">
+      <a href="Zencostaffwages.png" target="_blank">
+      <img src="Zencostaffwages.png" alt="Zenco Staff Wages">
+      </a>
+      <h4>Zenco Staff Wages</h4>
+      <p>HR analytics with wages, attendance and leave tracking.</p>
+  </div>
+
+  </div>
+</section>
+
+<section id="presentations">
+  <h2>Presentations</h2>
+  <div class="presentations">
+    <div class="presentation-card">
+      <h4>Power BI Sales Dashboard</h4>
+      <p>Sales, COGS, profit & city-wise insights.</p>
+      <a href="Power BI Sales Dashboard Analysis.mp4" download>Download</a>
+    </div>
+    <div class="presentation-card">
+      <h4>USA Annual Purchase Report</h4>
+      <p>Excel-based customer & salary analysis.</p>
+      <a href="USA Annual Purchase Report –2011.mp4" download>Download</a>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>My Skills</h2>
+  <div class="skills-section">
+    <div class="skill">
+      <div class="skill-header"><span>Advanced Excel</span><span>90%</span></div>
+      <div class="progress-bar"><div class="progress" style="width:90%"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-header"><span>Power BI</span><span>85%</span></div>
+      <div class="progress-bar"><div class="progress" style="width:85%"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-header"><span>Basic Python</span><span>85%</span></div>
+      <div class="progress-bar"><div class="progress" style="width:85%"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-header"><span>Asp.net</span><span>85%</span></div>
+      <div class="progress-bar"><div class="progress" style="width:85%"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-header"><span>SQL</span><span>75%</span></div>
+      <div class="progress-bar"><div class="progress" style="width:75%"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-header"><span>HTML</span><span>70%</span></div>
+      <div class="progress-bar"><div class="progress" style="width:70%"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-header"><span>CSS</span><span>70%</span></div>
+      <div class="progress-bar"><div class="progress" style="width:70%"></div></div>
+    </div>
+    
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <div class="contact">
+    📞 9048718653 <br>
+    ✉️ pa.shymol@gmail.com <br>
+    📍 Perumbavoor / Aluva, Kerala <br>
+  </div>
+  <div class="social-links">
+  <a class="btn" style="background:#0a66c2" href="https://www.linkedin.com/in/shymolpa" target="_blank">LinkedIn</a>
+  <a class="btn" style="background:#1877f2" href="https://www.facebook.com/shymolpa" target="_blank">Facebook</a>
+  <a class="btn" style="background:#E1306C" href="https://www.instagram.com/shymolpa" target="_blank">Instagram</a>
+</div>
+
+</section>
+
+<footer>
+  © 2026 Shymol P A | Portfolio
+</footer>
+
+</body>
+</html>
