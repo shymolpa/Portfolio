@@ -44,16 +44,38 @@ nav a:hover{ color:#60a5fa; }
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:80px 10%;
+  padding:50px 10% 70px;
   flex-wrap:wrap;
 }
 
 .hero-img img{
-  width:400px;
-  height:500px;
+  width:350px;
+  height:450px;
   object-fit:cover;
   border-radius:50% / 60%;
   border:5px solid #3b82f6;
+}
+.hero-text{
+  max-width:500px;
+}
+.hero h2{
+  font-size:28px;        /* increase name size */
+  line-height:1.15;
+  font-weight:700;
+  color:#e5e7eb;
+}
+
+.hero p{
+  font-size:20px;        /* subtitle size */
+  margin-top:12px;
+  color:#c7d2fe;
+  text-align: center;
+}
+
+.hero-btn{
+  display:flex;
+  justify-content:center;
+  margin-top:25px;
 }
 
 .btn{
@@ -67,11 +89,11 @@ nav a:hover{ color:#60a5fa; }
 }
 
 /* SECTIONS */
-section{ padding:70px 10%; }
+section{ padding:40px 10%; }
 
 section h2{
   text-align:center;
-  margin-bottom:40px;
+  margin-bottom:25px;
   color:#93c5fd;
 }
 
@@ -84,6 +106,18 @@ section h2{
 .about p{
   text-align:center;
 }
+/* ABOUT CARD STYLE (same as experience) */
+.about-card{
+  background:#020617;
+  padding:30px;
+  border-radius:16px;
+  box-shadow:0 8px 25px rgba(37,99,235,0.25);
+  max-width:800px;
+  margin:auto;
+  line-height:1.7;
+  color:#e5e7eb;
+}
+
 /* EXPERIENCE */
 .experience{
   max-width:800px;
@@ -117,7 +151,6 @@ section h2{
   line-height:1.7;
   color:#e5e7eb;
 }
-
 
 /* PROJECTS */
 .projects{
@@ -159,6 +192,16 @@ section h2{
   max-width:900px;
   margin:auto;
 }
+.download-btn{
+  display:inline-block;
+  margin-top:15px;
+  padding:10px 22px;
+  background:#2563eb;
+  color:#fff;
+  border-radius:25px;
+  text-decoration:none;
+  text-align:center;
+}
 
 .presentation-card{
   background:#020617;
@@ -186,7 +229,7 @@ section h2{
 
 /* SKILLS */
 .skills-section{
-  max-width:600px;
+  max-width:800px;
   margin:auto;
 }
 
@@ -258,21 +301,22 @@ footer{
     <a href="#contact">Contact</a>
   </nav>
 </header>
-
 <section class="hero" id="home">
-  <div>
-    <h2>Hello, I'm<br>Shymol P A</h2>
-    <p>IT Professional | ASP.NET Developer | Data Analytics Enthusiast</p>
+  <div class="hero-text">
+  <h2>Hi, I'm<br>Shymol P A</h2>
+  <p>IT Professional | ASP.NET Developer | Data Analytics Enthusiast</p>
+  <div class="hero-btn">
     <a href="Shymol_PA_Modern_Resume.pdf" class="btn" download>Download CV</a>
   </div>
+</div>
+
   <div class="hero-img">
     <img src="casualnwpic.png" alt="Profile">
   </div>
 </section>
-
 <section id="about">
   <h2>About Me</h2>
- <div class="about">
+<div class="about-card">
   <p>
     I am a dedicated IT professional with a Bachelor’s degree in Electronics and
     Communication Engineering and hands-on experience as an ASP.NET Developer.
@@ -282,7 +326,6 @@ footer{
     data-driven decision-making.
   </p>
 </div>
-
 </section>
 <section id="experience">
   <h2>Experience</h2>
@@ -300,8 +343,6 @@ footer{
     </div>
   </div>
 </section>
-
-
 <section id="projects">
   <h2>Projects</h2>
   <div class="projects">
@@ -337,12 +378,28 @@ footer{
     <div class="presentation-card">
       <h4>Power BI Sales Dashboard</h4>
       <p>Sales, COGS, profit & city-wise insights.</p>
-      <a href="Power BI Sales Dashboard Analysis.mp4" download>Download</a>
+
+      <video controls width="100%" style="margin-top:15px; border-radius:12px;">
+        <source src="Power BI Sales Dashboard Analysis.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+        <a href="Power BI Sales Dashboard Analysis.mp4" download class="download-btn">
+           Download
+        </a>
+
     </div>
     <div class="presentation-card">
       <h4>USA Annual Purchase Report</h4>
       <p>Excel-based customer & salary analysis.</p>
-      <a href="USA Annual Purchase Report –2011.mp4" download>Download</a>
+      <video controls width="100%" style="margin-top:15px; border-radius:12px;">
+        <source src="USA Annual Purchase Report –2011.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+
+        <a href="USA Annual Purchase Report –2011.mp4" download class="download-btn">
+             Download
+        </a>
+
     </div>
   </div>
 </section>
@@ -375,8 +432,8 @@ footer{
       <div class="progress-bar"><div class="progress" style="width:70%"></div></div>
     </div>
     <div class="skill">
-      <div class="skill-header"><span>CSS</span><span>70%</span></div>
-      <div class="progress-bar"><div class="progress" style="width:70%"></div></div>
+      <div class="skill-header"><span>CSS</span><span>65%</span></div>
+      <div class="progress-bar"><div class="progress" style="width:65%"></div></div>
     </div>
     
   </div>
